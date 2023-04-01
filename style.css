@@ -57,14 +57,14 @@ section.digital {
     font-size: 18px;
     background-color: #ffcc00;
     color: #000b23;
-    padding: 0 22px;
+    padding: 0 15px;
     font-weight: bold;
     position: relative;
 }
 
 .join p{
     margin: 0;
-    padding: 5px;
+    padding: 2px;
 }
 
 .join::before{
@@ -72,8 +72,8 @@ section.digital {
     position: absolute;
     width: 0;
     height: 0;
-    border-top: 36px solid red;
-    border-right: 20px solid transparent;
+    border-top: 30px solid #000b23;
+    border-right: 15px solid transparent;
     top: 0px;
     left: 0;
 }
@@ -83,8 +83,8 @@ section.digital {
     position: absolute;
     width: 0;
     height: 0;
-    border-bottom: 36px solid red;
-    border-left: 20px solid transparent;
+    border-bottom: 30px solid #000b23;
+    border-left: 15px solid transparent;
     top: 0px;
     right: 0;
 }
@@ -116,6 +116,7 @@ section.digital {
 .col.digital-r {
     display: flex;
     align-items: center;
+    /* position: relative; */
 }
 
 .cross i {
@@ -124,4 +125,97 @@ section.digital {
     position: relative;
     top: 60px;
     right: 60px;
+}
+
+.triangle1{
+    content: "";
+    position: absolute;
+    bottom: -175px;
+    width: 0;
+    height: 0;
+    border-top: 250px solid #ffcc00;
+    border-left: 250px solid transparent;
+    border-bottom: 100px solid transparent;
+    border-right: 100px solid #ffcc00;
+    border-top-right-radius: 75px;
+    rotate: -45deg;
+    z-index: 1;
+}
+
+.triangle2{
+    content: "";
+    position: absolute;
+    right: 310px;
+    bottom: -150px;
+    width: 0;
+    height: 0;
+    border-top: 200px solid #ffc001;
+    border-left: 200px solid transparent;
+    border-bottom: 100px solid transparent;
+    border-right: 100px solid #ffc001;
+    border-top-right-radius: 75px;
+    rotate: -45deg;
+    z-index: 2;
+}
+
+.triangle3{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: 500px solid #ffcc00;
+    border-left: 500px solid transparent;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+.triangle4 {
+    content: "";
+    position: absolute;
+    top: -85%;
+    right: -15%;
+    width: 0;
+    height: 0;
+    border-top: 90vh solid white;
+    border-left: 90vh solid transparent;
+    border-bottom: 30vh solid transparent;
+    border-right: 30vh solid white;
+    border-top-right-radius: 75px;
+    rotate: 135deg;
+    z-index: 1;
+
+
+   /* background-image: url(banner-img.jpg); */
+   /* position: absolute;
+   top: 0;
+    height: 60vh;
+    width: 90vh;
+    padding: 10px;
+    z-index: 3;
+ 
+    background-size: cover;
+    background-position: center right;
+    border-radius: 30px;
+
+    border-top: 10px solid white;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid white; */
+
+   
+}
+
+/* .triangle4 img{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 900px;
+    height: 600px;
+    object-fit: cover;
+} */
+
+.row.digital-out {
+    position: relative;
+    overflow: hidden;
 }
